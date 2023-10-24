@@ -1,0 +1,57 @@
+@media (max-width: 1024px) {
+  .table__cell:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .table__cell:not(:last-child) {
+    padding-right: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-bottom: 1.8125rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .header__wrapper {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+    width: 1.5rem;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .clients__title {
+    margin-bottom: 1.0625rem;
+    font-size: 1.125rem;
+  }
+
+  .modal {
+    max-width: 18.75rem;
+  }
+
+  .modal__text-block {
+    flex-wrap: wrap;
+    
+  }
+
+  .modal__title {
+    margin-bottom: 0.25rem;
+  }
+
+  .modal__id.modal__id {
+    margin-left: 0;
+  }
+
+  
+
+}

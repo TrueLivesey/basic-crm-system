@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="assets/css/custom-select.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__item">
+          <a class="logo header__logo">
+            <img src="images/logo.svg" alt="Логотип компании" class="logo__icon" />
+          </a>
+          <div class="search header__search">
+            <input type="text" placeholder="Введите запрос" id="header-search" class="search__input" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="clients">
+        <div class="container clients__container">
+          <h2 class="main-title clients__title">Клиенты</h2>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead class="table__header">
+                <tr class="table__header-stroke">
+                  <th class="table__header-cell table__sort-id">
+                    <p class="table__title table__title--rotate table__title--opacity">ID</p>
+                  </th>
+                  <th class="table__header-cell table__sort">
+                    <p class="table__title">Фамилия Имя Отчество</p>
+                  </th>
+                  <th class="table__header-cell table__sort">
+                    <p class="table__title">Дата и&nbsp;время создания</p>
+                  </th>
+                  <th class="table__header-cell table__sort">
+                    <p class="table__title">Последние изменения</p>
+                  </th>
+                  <th class="table__header-cell">
+                    <p class="table__title">Контакты</p>
+                  </th>
+                  <th class="table__header-cell">
+                    <p class="table__title">Действия</p>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="preloader">
+            <svg
+              class="preloader__image"
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.00025 40.0005C4.00025 59.8825 20.1182 76.0005 40.0002 76.0005C59.8822 76.0005 76.0002 59.8825 76.0002 40.0005C76.0002 20.1185 59.8823 4.00049 40.0003 4.00049C35.3513 4.00048 30.9082 4.88148 26.8282 6.48648"
+                stroke="#9873FF"
+                stroke-width="8"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <!-- <div id="modal-select"></div> -->
+        </div>
+      </section>
+    </main>
+
+    <script defer src="assets/js/custom-select.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer src="https://unpkg.com/tippy.js@6"></script>
+    <script defer src="assets/js/inputmask.min.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </body>
+</html>
